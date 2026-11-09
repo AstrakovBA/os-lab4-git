@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: lint-and-test
         run: |
-          echo "Все тесты прошли успешно!"
+          echo "All tests passed!"
     
 
   docker-build:
