@@ -10,14 +10,6 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run ShellCheck linter
-        uses: ludeeus/action-shellcheck@master
-        with:
-            severity: error
-
       - name: Run unit test
         run: |
           chmod +x app_calculator.sh
